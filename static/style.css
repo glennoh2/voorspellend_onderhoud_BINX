@@ -1,0 +1,320 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#header {
+height: 40px;
+position: absolute;
+margin-bottom: 40px;
+top: 0;
+left: 0;
+right: 0;
+z-index: 200;
+}
+
+#content {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+#bodem_tekst_push {
+    clear: both;
+    height: 40px;
+  }
+
+#bodem_tekst {
+    
+    background-color: #ffffff20;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin: 50 0 0 0px;
+    text-align: center;
+    z-index: 200;
+}
+
+.menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+  
+.menu a {
+    background-color: #ffffff20;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+}
+  
+.tekst_centraal {
+    float: left;
+    width: 50%;
+    height: fit-content;
+    margin: 15px;
+    padding: 0 20px;
+}
+
+.tekst_links {
+    float: left;
+    width: 60%;
+    margin: 20px;
+    padding: 0 20px;
+}
+  
+.tekst_rechts {
+    float: left;
+    width: 25%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.afbeelding_groot{
+    width: 100%; 
+    min-width: 400px; 
+    height: 100%; 
+    max-height: 400px;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    /*background-image: url("BINX_kantoor_hori.jpg");
+    background-color: #cccccc;*/
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(199,68,120,.4) 10%,rgba(199,68,120,0) 40%), -webkit-linear-gradient(top, rgba(199,68,120,.25) 0%,rgba(15,62,77,.4) 100%), -webkit-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c74478', endColorstr='#0f3e4d',GradientType=1 );
+}
+
+.input_tekstvak {
+    width: 100%;
+    height: 20px;
+    margin: 1px;
+    padding: 15px;
+    text-align: center;
+}
+
+.btn-block {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 1px;
+    text-align: center;
+}
+
+.hor_align {
+    vertical-align: middle;
+}
+
+table {
+    font-family: 'Titillium Web', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid white;
+    background-color: #ffffff20;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ffffff40;
+  }
+
+
+
+/* Voor browsen op de telefoon */
+
+
+@media only screen and (max-width: 768px) {
+    .tekst_links, .menu, .tekst_centraal, .tekst_rechts, .btn-block, .input_tekstvak, .bodem_tekst{
+        width: 100%;
+    }
+
+    .navbar-header {
+        float: left;
+    }
+
+    .navbar {
+        border-radius: 4px;
+        min-width: 400px;
+    }
+
+    .nav-tabs-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .nav-tabs-justified > .active > a,
+    .nav-tabs-justified > .active > a:hover,
+    .nav-tabs-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
+
+    .nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+    .nav-justified > li > a {
+        margin-bottom: 0;
+    }
+
+    .nav-tabs.nav-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .nav-tabs.nav-justified > .active > a,
+    .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs.nav-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
+
+    .nav-tabs.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+    .nav-tabs.nav-justified > li > a {
+        margin-bottom: 0;
+    }
+
+    .navbar-right .dropdown-menu {
+        right: 0;
+        left: auto;
+    }
+    .navbar-right .dropdown-menu-left {
+        right: auto;
+        left: 0;
+    }
+    .container {
+        min-width: 400px;
+    }
+
+    .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        box-shadow: none;
+    }
+    .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+    .navbar-collapse.in {
+        overflow-y: visible;
+    }
+    .navbar-fixed-top .navbar-collapse,
+    .navbar-static-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .container > .navbar-header,
+    .container-fluid > .navbar-header,
+    .container > .navbar-collapse,
+    .container-fluid > .navbar-collapse {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .navbar-static-top {
+        border-radius: 0;
+    }
+
+    .navbar-fixed-top,
+    .navbar-fixed-bottom {
+        border-radius: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-nav {
+        float: left;
+        margin: 0;
+    }
+    .navbar-nav > li {
+        float: left;
+    }
+    .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .navbar-nav.navbar-right:last-child {
+        margin-right: -15px;
+    }
+
+    .navbar-left {
+        float: left !important;
+    }
+    .navbar-right {
+        float: right !important;
+    }
+
+    .navbar-form .form-group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .navbar-form .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+    .navbar-form .control-label {
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .navbar-form .radio,
+    .navbar-form .checkbox {
+        display: inline-block;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .navbar-form .radio input[type="radio"],
+    .navbar-form .checkbox input[type="checkbox"] {
+        float: none;
+        margin-left: 0;
+    }
+    .navbar-form .has-feedback .form-control-feedback {
+        top: 0;
+    }
+
+    .navbar-form {
+        width: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+        border: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+    .navbar-form.navbar-right:last-child {
+        margin-right: -15px;
+    }
+
+    .navbar-text {
+        float: left;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .navbar-text.navbar-right:last-child {
+        margin-right: 0;
+    } 
+}
