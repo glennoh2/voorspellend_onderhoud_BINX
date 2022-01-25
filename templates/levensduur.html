@@ -1,0 +1,33 @@
+﻿{% extends "layout.html" %}
+{% block title %}Levensduur filter{% endblock %}
+{% block content %}
+<div style="padding:10px; margin: 10 10 10 25px">
+    <h1>Voltooide levensduur filter</h1>
+</div>
+
+<div class="tekst_centraal">
+<p>De voltooide levensduur is bepalend voor de hoeveelheid stofdeeltjes die een filter moet filteren.
+Hierdoor zal de buffer van een filter sneller toenemen, waardoor het drukverschil hoger wordt.
+</p>
+<p>In het POC wordt deze berekent door het invoeren van de datum van plaatsing van de filter in het LBK.
+
+</p>
+</div>
+
+<div class="tekst_rechts" style="background-color: #ffffff20;">
+    <form action="/levensduur/bereken" method="post">
+        <p style="margin: 0 0 0 0px;">Plaatsingdatum van filter:</p>
+        <div class="input-group mb-3 input_tekstvak" style="margin: 0 0 0 0px;">
+            <input type="date" name="datum_plaatsing_filter" class="form-control">
+        </div>
+        <p style="margin: 50 0 0 0px;">Huidige datum van filter:</p>
+        <div class="input-group mb-3 input_tekstvak">
+            <input type="date" name="datum_huidig_filter" class="form-control">
+        </div>
+        <div class="mb-3 input_tekstvak">
+            <button type="submit" class="mb-3 btn btn-primary">Bereken</button>
+        </div>
+    </form>
+    <p style="margin: 40 10 10 10px;">Voltooide levensduur filter: {{ result_levensduur }} uur</p>
+</div>
+{% endblock %}

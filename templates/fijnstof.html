@@ -1,0 +1,25 @@
+﻿{% extends "layout.html" %}
+{% block title %}Aansturing ventilator{% endblock %}
+{% block content %}
+<div style="padding:10px; margin: 10 10 10 25px">
+    <h1>Fijnstofconcentraties buitenlucht</h1>
+</div>
+
+<div class="tekst_centraal">
+    <p>De hoogte van fijnstofconcentraties in de buitenlucht hebben effect op de hoeveelheid stofdeeltjes die een filter moet opnemen.
+    Naarmate de tijd verstrijkt, zal de buffer - voor het opnemen van de stofdeeltjes - van het filter voller raken.
+    Het resultaat daarvan is dat het drukverschil over het filter zal toenemen.</p>
+    <p>Momenteel meet BINX deze concentraties voor het Stedelijk College in eindhoven. De waardes daarvan zijn af te lezen in SkySpark.
+    <p>Ook is het mogelijk om de waarde van de fijnstofconcentratie af te lezen in een grafiek op 
+    <a style="color: white" href="https://www.atlasleefomgeving.nl/kaarten?config=3ef897de-127f-471a-959b-93b7597de188&gm-z=8&gm-x=240773.0087878542&gm-y=450403.9992571142&gm-b=1544180834512,true,1;1544969872210,true,0.8" target="_blank"><em>de website van atlaslefomgeving</em></a>
+    (partner van het RIVM). Figuur 1 toont deze grafiek. Hier is Groenlo gekozen als voorbeeld.</p> 
+    <p>De fijnstofconcentratie voor de buitenlucht worden gemeten in microgram per kubieke meter [µg/m<sup>3</sup>]. </p>
+</div>
+
+<div class="tekst_rechts">
+    <div clas="afbeelding_groot">
+        <img src="static\grafiek_fijnstof.jpg" width="400" height="300" alt="lbk_onderdelen"><br>
+        <p style="font-size: 12px;"><em>Figuur 1: Grafiek fijnstofconcentratie</em></p>
+    </div>
+</div>
+{% endblock %}

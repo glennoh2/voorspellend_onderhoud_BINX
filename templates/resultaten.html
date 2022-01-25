@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}Resultaten voorspelling{% endblock %}
+{% block content %}
+
+<div style="text-align:center; padding:10px; margin: 10px">
+    <h1>Resultaten voorspelling</h1>
+</div>
+
+
+<div style="overflow:auto; background-color: #ffffff20; padding: 10px;" class="menu">
+    <h5>{{result_drukverschil}} Pa</h5>
+    <h5>{{result_energieverbruik}} kWh/jaar</h5>
+    <h5>€ {{result_energiekosten}} </h5>
+</div>
+
+
+
+
+<div class="tekst_centraal">
+    <p> De resultaten van de voorspelling bevatten in totaal 3 verschillende uitkomsten.
+    Deze geven aan wanneer het winstgevend is om een filter te vervangen.</p>
+</div>
+
+</div>
+{% endblock %}

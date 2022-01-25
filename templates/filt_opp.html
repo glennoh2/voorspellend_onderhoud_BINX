@@ -1,0 +1,27 @@
+﻿{% extends "layout.html" %}
+{% block title %}Aansturing ventilator{% endblock %}
+{% block content %}
+<div style="padding:10px; margin: 10 10 10 25px">
+    <h1>Filteroppervlak filter</h1>
+</div>
+
+<div class="tekst_centraal">
+    <p>Het filteroppervlak van een filter is bepalend voor de hoeveelheid stofdeeltjes die een filter kan opnemen.
+    De totale oppervlakte wordt bepaalt door het aantal zakken en de afmetingen daarvan.
+    </p> 
+    <p>Onderstaande formule kan de totale oppervlakte van de filter berekenen: <br>
+    <em>Totale oppervlakte = 2 * lengte zak * breedte frame * aantal zakken</em>
+    </p>
+    <p>De benodigde informatie is te vinden in de documentatie met technische specificaties over de LBK.
+    Figuur 1 geeft een sectie weer van het document over de LBK van het Stedelijk college.
+    Volgens deze informatie zal het oppervlak dan resulteren in 83,84 m<sup>2</sup>.
+</p>
+</div>
+
+<div class="tekst_rechts">
+    <div clas="afbeelding_groot">
+        <img src="static\specs_filter.jpg" width="600" height="300" alt="specs_filter"><br>
+        <p style="font-size: 12px;"><em>Figuur 1: Specificaties filter</em></p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,84 @@
+﻿{% extends "layout.html" %}
+{% block title %}Filterklasse{% endblock %}
+{% block content %}
+<div style="padding:10px; margin: 10 10 10 25px">
+    <h1>Filterklasse</h1>
+</div>
+
+<div class="tekst_centraal">
+    <p>De filterklasse bepaalt de efficiëntie van het filter.
+    Hoe hoger de klasse, des te meer kleinere deeltjes het filter uit de (buiten)lucht kan filteren.
+    </p>
+    <p>De klasse van oudere filters worden benoemd volgens EN779:2012.
+    Tegenwoordig wordt de classificatie van filters beschreven volgens ISO16890. 
+    De koppeling tussen deze twee normen is niet direct te herleiden; de individuele classificaties zijn opgedeeld. 
+    In tabel 1 wordt dit overzichtelijk gemaakt.
+    </p>
+    <p>Voor het Stedelijk College is de nieuwe filternotatie nagevraagd bij de leverancier.
+    Deze is veranderd van "F7" naar "ePM1 70%".
+    </p>
+</div>
+
+<div class="tekst_rechts">
+    <table>
+        <tr style="background-color: #c74478">
+            <th> <b>EN779:2012</b> </th>
+            <th>ISO Coarse</th>
+            <th>ISO ePM10</th>
+            <th>ISO ePM2.5</th>
+            <th>ISO ePM1</th>
+            
+        </tr>
+        <tr>
+            <td><b>G3</b></td>
+            <td>> 45 %</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td><b>G4</b></td>
+            <td>> 90%</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td><b>M5</b></td>
+            <td>> 95%</td>
+            <td>> 50%</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td><b>M6</b></td>
+            <td>> 95%</td>
+            <td>> 60%</td>
+            <td>50-60%</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td><b>F7</b></td>
+            <td>> 95%</td>
+            <td>> 85%</td>
+            <td>65-80%</td>
+            <td>50-65%</td>
+        </tr>
+        <tr>
+            <td><b>F8</b></td>
+            <td>> 95%</td>
+            <td>> 90%</td>
+            <td>> 80%</td>
+            <td>65-80%</td>
+        </tr>
+        <tr>
+            <td><b>F9</b></td>
+            <td>> 95%</td>
+            <td>> 95%</td>
+            <td>> 95%</td>
+            <td>> 80%</td>
+        </tr>
+      </table><br>
+      <p style="font-size: 12px;"><em>Tabel 1: Koppeling tussen EN779:2012 en ISO16890</em></p>
+</div>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block title %}Voorspelling maken{% endblock %}
+{% block content %}
+<div style="text-align:center; padding:10px; margin: 10px">
+    <h1>BINX webapplicatie PdM filters</h1>
+</div>
+
+<div class="menu" style="overflow:auto">
+    <a href="/aanst_vent">Aansturing ventilator</a>
+    <a href="/fijnstof">Fijnstofconcentraties</a>
+    <a href="/filt_opp">Filteroppervlak</a>
+    <a href="/klasse">Filterklasses</a>
+    <a href="/flow">Totale flow</a>
+    <a href="/levensduur">Voltooide levensduur</a>
+    <a href="/energieprijs">Energieprijs</a>
+</div>
+
+<div class="tekst_centraal">
+    <p>Onder het tabje "<a href="/pdm_filters" style="color: white;">PdM Filters</a>" wordt reeds beschreven dat er een Proof of Concept ontwikkeld is.
+    Dit POC kan, aan de hand van een Random Forrest model en historische data, een voorspelling maken van het drukverschil in de toekomst.</p>
+    <p>Om een voorspelling te maken, moet een gebruiker waardes invoeren in de tekstvakken op deze pagina. De juiste eenheden staan beschreven naast de tekstvakken.
+    Daarnaast wordt er meer informatie gegeven over de individuele parameters op de pagina's die met de linkjes verbonden zijn.</p>
+</div>
+
+
+<div class="tekst_rechts" style="background-color: #ffffff20;">
+        <form action='/voorspelling/resultaat' method="post">
+            <div class="input-group mb-3 input_tekstvak">
+                <input type="text" name="aanst_vent" class="form-control" placeholder="AANSTURING VENTILATOR" aria-label="Efficiëntie waar ventilator mee draait" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">%</span>
+            </div>
+            <div class="input-group mb-3 input_tekstvak">
+                <input type="text" name="fijnst_pm10" class="form-control" placeholder="FIJNSTOF PM10" aria-label="Gewicht stofdeeltjes kleiner dan 10 micrometer" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">µg/m<sup>3</sup></span>
+            </div>
+            <div class="input-group mb-3 input_tekstvak">
+                <input type="text" name="fijnst_pm2_5" class="form-control" placeholder="FIJNSTOF PM2.5" aria-label="Gewicht stofdeeltjes kleiner dan 2,5 micrometer" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">µg/m<sup>3</sup></span>
+            </div>
+            <div class="input-group mb-3 input_tekstvak">
+                <input type="text" name="filt_opp" class="form-control" placeholder="FILTEROPPERVLAK" aria-label="AANSTURING VENTILATOR" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">m<sup>2</sup></span>
+            </div>
+            <div class="input-group mb-3 input_tekstvak">
+                <input type="text" name="klasse" class="form-control" placeholder="KLASSE" aria-label="AANSTURING VENTILATOR" aria-describedby="basic-addon2">
+                
+            </div>
+            <div class="input-group mb-3 input_tekstvak">
+                <input type="text" name="flow" class="form-control" placeholder="TOTALE FLOW" aria-label="AANSTURING VENTILATOR" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">m<sup>3</sup>/h</span>
+            </div>
+            <div class="input-group mb-3 input_tekstvak">
+                <input type="text" name="levensduur" class="form-control" placeholder="VOLTOOIDE LEVENSDUUR" aria-label="AANSTURING VENTILATOR" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">uur</span>
+            </div>
+            <div class="input-group mb-3 input_tekstvak">
+                <span class="input-group-text">€</span>
+                <input type="text" name="energieprijs" class="form-control" placeholder="ENERGIEPRIJS" aria-label="Amount (to the nearest dollar)">
+            </div>
+            <div class="mb-3 input_tekstvak">
+                <button type="submit" class="mb-3 btn btn-primary">Voorspel</button>
+            </div>
+        </form>
+
+        <p style="margin: 40 10 0 20px;">Drukverschil filter: {{ result_drukverschil }} Pa</p><br>
+        <p style="margin: 0 10 0 20px;">Energieverbruik: {{ result_energieverbruik }} kWh</p><br>
+        <p style="margin: 0 10 0 20px;">Totale energiekosten: €{{ result_energiekosten }} </p><br>
+    </div>
+{% endblock %}

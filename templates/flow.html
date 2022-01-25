@@ -1,0 +1,33 @@
+﻿{% extends "layout.html" %}
+{% block title %}Totale flow{% endblock %}
+{% block content %}
+<div style="padding:10px; margin: 10 10 10 25px">
+    <h1>Totale flow LBK</h1>
+</div>
+
+<div class="tekst_centraal">
+<p>De totale flow is bepalend voor de hoeveelheid stofdeeltjes die een filter moet filteren.
+Hierdoor zal de buffer van een filter sneller toenemen, waardoor het drukverschil hoger wordt.
+</p>
+<p>
+De totale flow wordt in het Stedelijk College berekent door het optellen van waardes van verschillende flowsensoren.
+Deze sensoren zitten in de toevoerkanalen naar ruimtes; zie daarvoor figuur 1.
+</p>
+<p>
+Voor de voorspelling wordt geadviseerd om de totale flow te nemen die in het technische specificatie document staat; zie daarvoor figuur 2.
+Dit zijn de specificaties voor een LBK van het Stedelijk College. 
+In dit geval zal voor de voorspelling de waarde <em>25,999</em> [m<sup>3</sup>/h] ingevuld moeten worden.
+</p>
+</div>
+
+<div class="tekst_rechts">
+    <div clas="afbeelding_groot">
+        <img src="static\GBS_flowregeling.jpg" width="600" height="400" alt="specs_filter"><br>
+        <p style="font-size: 12px;"><em>Figuur 1: Flowregeling GBS</em></p>
+    </div>
+    <div clas="afbeelding_groot">
+        <img src="static\specs_lbk_flow.jpg" width="500" height="175" alt="specs_filter"><br>
+        <p style="font-size: 12px;"><em>Figuur 2: Specificaties LBK Stedelijk College</em></p>
+    </div>
+</div>
+{% endblock %}

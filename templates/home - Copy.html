@@ -1,0 +1,37 @@
+﻿<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Voorspel Energieverbruik</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+     <h1>Voorspel Energieverbruik</h1>
+
+     <!-- Form to enter new data for predictions  -->
+     <form action="{{ url_for('predict')}}" method="POST">
+         <input type="text" name="aanst-vent" placeholder="AANSTURING VENTILATOR" required="required" /><br>
+         <input type="text" name="fijnstof_pm10" placeholder="FIJNSTOFCONCENTRATIE PM10" required="required" /><br>
+         <input type="text" name="fijnstof_pm2_5" placeholder="FIJNSTOFCONCENTRATIE PM2.5" required="required" /><br>
+         <input type="text" name="filt_opp" placeholder="FILTER OPPERVLAK" required="required" /><br>
+         <input type="text" name="klasse" placeholder="KLASSE" required="required" /><br>
+         <input type="text" name="flow" placeholder="TOTALE FLOW" required="required" /><br>
+         <input type="text" name="levensduur" placeholder="VOLTOOIDE LEVENSDUUR" required="required" /><br>
+         <button type="submit" class="btn btn-primary btn-block btn-large">Voorspel</button>
+     </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{pred}}
+
+</body>
+</html>
