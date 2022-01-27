@@ -1,0 +1,161 @@
+2021-12-20 14:04:10,206:INFO:Initializing load_model()
+2021-12-20 14:04:10,207:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-20 14:04:15,110:INFO:Initializing load_model()
+2021-12-20 14:04:15,110:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-20 14:07:04,768:INFO:Initializing load_model()
+2021-12-20 14:07:04,769:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-20 14:07:09,688:INFO:Initializing load_model()
+2021-12-20 14:07:09,688:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-20 14:07:27,101:INFO:Initializing predict_model()
+2021-12-20 14:07:27,101:INFO:predict_model(display=None, ml_usecase=MLUsecase.REGRESSION, verbose=True, round=0, raw_score=False, encoded_labels=True, probability_threshold=None, estimator=Pipeline(steps=[('voorbereiding',
+                 ColumnTransformer(transformers=[('num',
+                                                  Pipeline(steps=[('imputer',
+                                                                   SimpleImputer()),
+                                                                  ('norm_scaler',
+                                                                   MinMaxScaler())]),
+                                                  ['Aansturing Ventilator',
+                                                   'Fijnstofconcentratie PM10',
+                                                   'Fijnstofconcentratie PM2.5',
+                                                   'Filteroppervlak',
+                                                   'Totale Flow',
+                                                   'Voltooide Levensduur']),
+                                                 ('cat', OneHotEncoder(),
+                                                  ['Klasse'])])),
+                ('rand_forest',
+                 RandomForestRegressor(criterion='squared_error'))]))
+2021-12-20 14:07:27,101:INFO:Checking exceptions
+2021-12-20 14:07:27,101:INFO:Preloading libraries
+2021-12-20 14:10:17,709:INFO:Initializing load_model()
+2021-12-20 14:10:17,709:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-20 14:10:22,288:INFO:Initializing load_model()
+2021-12-20 14:10:22,288:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-20 14:10:49,574:INFO:Initializing predict_model()
+2021-12-20 14:10:49,574:INFO:predict_model(display=None, ml_usecase=MLUsecase.REGRESSION, verbose=True, round=0, raw_score=False, encoded_labels=True, probability_threshold=None, estimator=Pipeline(steps=[('voorbereiding',
+                 ColumnTransformer(transformers=[('num',
+                                                  Pipeline(steps=[('imputer',
+                                                                   SimpleImputer()),
+                                                                  ('norm_scaler',
+                                                                   MinMaxScaler())]),
+                                                  ['Aansturing Ventilator',
+                                                   'Fijnstofconcentratie PM10',
+                                                   'Fijnstofconcentratie PM2.5',
+                                                   'Filteroppervlak',
+                                                   'Totale Flow',
+                                                   'Voltooide Levensduur']),
+                                                 ('cat', OneHotEncoder(),
+                                                  ['Klasse'])])),
+                ('rand_forest',
+                 RandomForestRegressor(criterion='squared_error'))]))
+2021-12-20 14:10:49,574:INFO:Checking exceptions
+2021-12-20 14:10:49,574:INFO:Preloading libraries
+2021-12-20 14:18:29,709:INFO:Initializing load_model()
+2021-12-20 14:18:29,710:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-20 14:18:34,352:INFO:Initializing load_model()
+2021-12-20 14:18:34,352:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-20 14:32:51,710:INFO:Initializing load_model()
+2021-12-20 14:32:51,710:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-20 14:34:32,748:INFO:Initializing load_model()
+2021-12-20 14:34:32,748:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-22 13:55:25,565:INFO:Initializing load_model()
+2021-12-22 13:55:25,566:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-22 13:55:47,132:INFO:Initializing load_model()
+2021-12-22 13:55:47,132:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-22 13:55:53,068:INFO:Initializing load_model()
+2021-12-22 13:55:53,068:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-22 13:57:27,089:INFO:Initializing load_model()
+2021-12-22 13:57:27,090:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-22 13:57:32,914:INFO:Initializing load_model()
+2021-12-22 13:57:32,914:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2021-12-22 13:59:14,083:INFO:Initializing predict_model()
+2021-12-22 13:59:14,084:INFO:predict_model(display=None, ml_usecase=MLUsecase.REGRESSION, verbose=True, round=0, raw_score=False, encoded_labels=True, probability_threshold=None, estimator=Pipeline(steps=[('voorbereiding',
+                 ColumnTransformer(transformers=[('num',
+                                                  Pipeline(steps=[('imputer',
+                                                                   SimpleImputer()),
+                                                                  ('norm_scaler',
+                                                                   MinMaxScaler())]),
+                                                  ['Aansturing Ventilator',
+                                                   'Fijnstofconcentratie PM10',
+                                                   'Fijnstofconcentratie PM2.5',
+                                                   'Filteroppervlak',
+                                                   'Totale Flow',
+                                                   'Voltooide Levensduur']),
+                                                 ('cat', OneHotEncoder(),
+                                                  ['Klasse'])])),
+                ('rand_forest',
+                 RandomForestRegressor(criterion='squared_error'))]))
+2021-12-22 13:59:14,084:INFO:Checking exceptions
+2021-12-22 13:59:14,084:INFO:Preloading libraries
+2022-01-02 18:11:24,027:INFO:Initializing load_model()
+2022-01-02 18:11:24,028:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2022-01-02 18:11:28,887:INFO:Initializing load_model()
+2022-01-02 18:11:28,887:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2022-01-12 20:33:05,772:INFO:Initializing load_model()
+2022-01-12 20:33:05,773:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2022-01-12 20:33:10,776:INFO:Initializing load_model()
+2022-01-12 20:33:10,777:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2022-01-17 12:16:16,126:INFO:Initializing load_model()
+2022-01-17 12:16:16,127:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model.pkl)
+2022-01-17 12:16:52,776:INFO:Initializing load_model()
+2022-01-17 12:16:52,777:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2022-01-17 12:16:57,952:INFO:Initializing load_model()
+2022-01-17 12:16:57,952:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2022-01-17 12:17:44,491:INFO:Initializing load_model()
+2022-01-17 12:17:44,492:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2022-01-17 12:17:55,702:INFO:Initializing load_model()
+2022-01-17 12:17:55,702:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2022-01-17 12:18:00,944:INFO:Initializing load_model()
+2022-01-17 12:18:00,944:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2022-01-17 12:19:22,154:INFO:Initializing load_model()
+2022-01-17 12:19:22,154:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2022-01-17 12:19:33,661:INFO:Initializing load_model()
+2022-01-17 12:19:33,662:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2022-01-17 12:19:36,751:INFO:Initializing predict_model()
+2022-01-17 12:19:36,751:INFO:predict_model(display=None, ml_usecase=MLUsecase.REGRESSION, verbose=True, round=0, raw_score=False, encoded_labels=True, probability_threshold=None, estimator=Pipeline(steps=[('voorbereiding',
+                 ColumnTransformer(transformers=[('num',
+                                                  Pipeline(steps=[('imputer',
+                                                                   SimpleImputer()),
+                                                                  ('norm_scaler',
+                                                                   MinMaxScaler())]),
+                                                  ['Aansturing Ventilator',
+                                                   'Fijnstofconcentratie PM10',
+                                                   'Fijnstofconcentratie PM2.5',
+                                                   'Filteroppervlak',
+                                                   'Totale Flow',
+                                                   'Voltooide Levensduur']),
+                                                 ('cat', OneHotEncoder(),
+                                                  ['Klasse'])])),
+                ('rand_forest',
+                 RandomForestRegressor(criterion='squared_error'))]))
+2022-01-17 12:19:36,752:INFO:Checking exceptions
+2022-01-17 12:19:36,752:INFO:Preloading libraries
+2022-01-17 12:19:39,306:INFO:Initializing load_model()
+2022-01-17 12:19:39,307:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model)
+2022-01-20 18:15:33,746:INFO:Initializing load_model()
+2022-01-20 18:15:33,748:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=./def_model.joblib)
+2022-01-20 18:16:24,272:INFO:Initializing load_model()
+2022-01-20 18:16:24,273:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model.pkl)
+2022-01-20 18:17:09,538:INFO:Initializing load_model()
+2022-01-20 18:17:09,539:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=def_model.joblib)
+2022-01-20 18:19:18,574:INFO:Initializing predict_model()
+2022-01-20 18:19:18,575:INFO:predict_model(display=None, ml_usecase=MLUsecase.REGRESSION, verbose=True, round=0, raw_score=False, encoded_labels=True, probability_threshold=None, estimator=Pipeline(steps=[('voorbereiding',
+                 ColumnTransformer(transformers=[('num',
+                                                  Pipeline(steps=[('imputer',
+                                                                   SimpleImputer()),
+                                                                  ('norm_scaler',
+                                                                   MinMaxScaler())]),
+                                                  ['Aansturing Ventilator',
+                                                   'Fijnstofconcentratie PM10',
+                                                   'Fijnstofconcentratie PM2.5',
+                                                   'Filteroppervlak',
+                                                   'Totale Flow',
+                                                   'Voltooide Levensduur']),
+                                                 ('cat',
+                                                  Pipeline(steps=[('enc',
+                                                                   OneHotEncoder(handle_unknown='ignore'))]),
+                                                  ['Klasse'])])),
+                ('rand_forest',
+                 RandomForestRegressor(criterion='squared_error',
+                                       max_features=5, n_estimators=131,
+                                       random_state=42))]))
+2022-01-20 18:19:18,575:INFO:Checking exceptions
+2022-01-20 18:19:18,575:INFO:Preloading libraries
